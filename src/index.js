@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Importamos librerias de React
+import React from "react";
+import ReactDOM from "react-dom";
+// Importamos el componente principal de la App
+import App from "./components/app";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+/*******************************************************************************************************/
+// Componente Inicial de la Web //
+/*******************************************************************************************************/
+const Index = () => {
+  // Renderizamos
+  return <App />;
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Renderizamos el componente en el DOM
+ReactDOM.render(<Index />, document.getElementById("root"));
